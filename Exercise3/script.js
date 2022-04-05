@@ -12,8 +12,18 @@ const winCombos = [
   [6, 4, 2],
 ];
 
+const userOpt = document.querySelector("#firstPlayer"); // decides whether the user plays first or second
 const cells = document.querySelectorAll(".cell");
 startGame();
+
+function firstAIMove() {
+  startGame();
+  if (userOpt.selectedIndex == 1) {
+    let id = Math.floor(Math.random() * 10);
+    if (id == 9) a--;
+    document.getElementById(id).innerText = aiPlayer;
+  }
+}
 
 function startGame() {
   document.querySelector(".endgame").style.display = "none";

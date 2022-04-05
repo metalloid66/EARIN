@@ -1,48 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  margin-top: 10rem;
+  font-size: 5rem;
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.question {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.playingFirst {
+  display: flex;
+  position: absolute;
+  bottom: 30.5rem;
+}
+
+.playerReset {
+  display: block;
+  font-size: 2rem;
+  padding: 4px 6px;
+  width: 10rem;
+  margin: -3.5rem auto;
+  /* margin: 40rem auto; */
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.playerReset:active {
+  transform: translateY(2px);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.326); */
+}
+
+.playerReset:hover {
+  background-color: rgba(128, 128, 128, 0.114);
+}
+
+.container {
+  position: relative;
+  margin: 7rem auto;
+  width: 30rem;
+}
+
 td {
   border: 2px solid #333;
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   text-align: center;
   vertical-align: middle;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 70px;
+  font-family: monospace;
+  font-size: 8rem;
   cursor: pointer;
 }
 
 table {
   border-collapse: collapse;
-  position: absolute;
-  left: 50%;
-  margin-left: -155px;
-  top: 50px;
-}
-
-table tr:first-child td {
-  border-top: 0;
-}
-
-table tr:last-child td {
-  border-bottom: 0;
-}
-
-table tr td:first-child {
-  border-left: 0;
-}
-
-table tr td:last-child {
-  border-right: 0;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* margin-left: -155px; */
+  top: 5rem;
 }
 
 .endgame {
   display: none;
-  width: 200px;
-  top: 120px;
+  width: 20rem;
+  top: 8rem;
   background-color: rgba(205, 133, 63, 0.8);
   position: absolute;
   left: 50%;
-  margin-left: -100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-left: -10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
   border-radius: 5px;
   color: white;
