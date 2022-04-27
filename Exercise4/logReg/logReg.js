@@ -18,7 +18,7 @@ Papa.parsePromise = function (file) {
 // Load the data file
 const loadData = async () => {
   const csvTrain = await Papa.parsePromise(
-    "https://res.cloudinary.com/dsc8qplyp/raw/upload/v1651000513/csv_20_precent_train_test_uere8z.csv"
+    "https://res.cloudinary.com/dsc8qplyp/raw/upload/v1651001140/csv_20_precent_train_test_dlwf4l.csv"
   );
 
   return [csvTrain.data];
